@@ -27,5 +27,7 @@ int percent(va_list);
 int pinteger(va_list);
 int number(va_list);
 int parse(const char *format, toPrint func[], va_list args);
+int unsigned_int(va_list);
+int unsigned_number(unsigned int);
 
 #endif
