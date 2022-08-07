@@ -1,5 +1,3 @@
-#include <stdarg.h>
-#include <stdio.h>
 #include "main.h"
 
 /**
@@ -23,7 +21,8 @@ int _printf(const char *format, ...)
 
 	if (format == NULL)
 		return (-1);
-	va_stat(args, format);
+
+	va_start(args, format);
 	printed = parse(format, func, args);
 	va_end(args);
 	return (printed);
