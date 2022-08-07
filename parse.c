@@ -19,18 +19,18 @@ int parse(const char *format, toPrint func[], va_list args)
 	{
 		if (format[i] == '%')
 		{
-			for (j = 0; func[j].sym != NULL; j++)
+			for (j = 0; func[j].operation != NULL; j++)
 			{
-				if (format[i + 1] == func[i].sym[0])
+				if (format[i + 1] == func[j].operation[0])
 				{
-					x = func[j].f[args];
+					x = func[j].f(args);
 					if (x == -1)
 						return (-1);
 					printed += x;
 					break;
 				}
 			}
-			if (func[j].sym == NULL && format[i + 1] != ' ')
+			if (func[j].operation == NULL && format[i + 1] != ' ')
 			{
 				if (format[i + 1] != '\0')
 				{

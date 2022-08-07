@@ -7,7 +7,7 @@
 int pchar(va_list list)
 {
 
-	-putchar(va_arg(list, int));
+	_putchar(va_arg(list, int));
 	return (1);
 }
 /**
@@ -61,4 +61,7 @@ int unsigned_int(va_list list)
 
 	if (x == 0)
 		return (unsigned_number(x));
+	if (x < 1)
+		return (-1);
+	return (unsigned_number(x));
 }
