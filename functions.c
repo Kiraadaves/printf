@@ -49,3 +49,16 @@ int pinteger(va_list list)
 	count = number(list);
 	return (count);
 }
+/**
+ * unsigned_int - prints unsigned integers
+ * @list: list of all arguments
+ * Return: a count of numbers
+ */
+int unsigned_int(va_list list)
+{
+	unsigned int x;
+	x = va_arg(list, unsigned int);
+
+	if (x == 0)
+		return (unsigned_number(x));
+}
