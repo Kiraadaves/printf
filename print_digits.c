@@ -34,13 +34,14 @@ int number(va_list args)
 /**
  * unsigned_number - prints an unsigned number
  * @x: unsigned int to be printed
- * Return:
+ * Return: returns integer value
  */
 int unsigned_number(unsigned int x)
 {
 	int div = 1;
 	int add = 0;
 	unsigned int i;
+
 	i = x;
 
 	for (; i / div > 9;)
