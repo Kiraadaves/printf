@@ -1,0 +1,15 @@
+This is a mini printf function.
+You should add the main.h header file inorder to use this function.
+
+To use _printf you have to use the following key characters preceeded by % symbol.
+
+
+%c: To be used to print a character
+
+%s: To be used to print strings
+
+
+%d: To print integers of max and min size of an int type
+
+
+%i: To print integers of max and min size of an int type
