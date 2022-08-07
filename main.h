@@ -6,9 +6,9 @@
 #include <stdarg.h>
 
 /**
- * struct forprintf -> structure contrary functions
+ * struct forPrintf -> structure contrary functions
  *
- * @operator: the operator
+ * @operation: the operator
  * @f: function
  */
 
