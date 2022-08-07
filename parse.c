@@ -1,14 +1,18 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
+ * parse - recieves main string and other parameters
+ * @format: string to print
+ * @func: list of functions
+ * @args: all arguments passed
  *
- *
+ * Return: total count of what was printed
  */
 
 int parse(const char *format, toPrint func[], va_list args)
 {
 	int i, j, x, printed;
+
 	printed = 0;
 
 	for (i = 0; format[i] != '\0'; i++)
@@ -26,7 +30,7 @@ int parse(const char *format, toPrint func[], va_list args)
 					break;
 				}
 			}
-			if (func[j].sym ==NULL && format[i + 1] != ' ')
+			if (func[j].sym == NULL && format[i + 1] != ' ')
 			{
 				if (format[i + 1] != '\0')
 				{
