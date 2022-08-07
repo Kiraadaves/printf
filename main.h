@@ -6,9 +6,9 @@
 #include <stdarg.h>
 
 /**
- * struct forprintf -> structure contrary functions
+ * struct forPrintf -> structure contrary functions
  *
- * @operator: the operator
+ * @operation: the operator
  * @f: function
  */
 
@@ -18,6 +18,7 @@ struct forPrintf
 	int (*f)(va_list);
 };
 typedef struct forPrintf toPrint;
+
 int _printf(const char *format, ...);
 int _putchar(char);
 int pchar(va_list);
