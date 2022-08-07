@@ -19,6 +19,7 @@ int pstr(va_list list)
 {
 	int x;
 	char *string;
+
 	string = va_arg(list, char *);
 	if (string == NULL)
 		string = "(null)";
@@ -44,6 +45,7 @@ int percent(__attribute__((unused))va_list list)
 int pinteger(va_list list)
 {
 	int count;
+
 	count = number(list);
 	return (count);
 }
