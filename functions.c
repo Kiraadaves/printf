@@ -57,6 +57,7 @@ int pinteger(va_list list)
 int unsigned_int(va_list list)
 {
 	unsigned int x;
+
 	x = va_arg(list, unsigned int);
 
 	if (x == 0)
