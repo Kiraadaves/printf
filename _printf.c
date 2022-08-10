@@ -29,7 +29,7 @@ toPrint func[] = {
 va_list args;
 
 if (format == NULL)
-    return (-1);
+	return (-1);
 
 va_start(args, format);
 printed = parse(format, func, args);
