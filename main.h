@@ -29,5 +29,16 @@ int number(va_list);
 int parse(const char *format, toPrint func[], va_list args);
 int unsigned_int(va_list);
 int unsigned_number(unsigned int);
+int print_binary(va_list l);
+int _puts(char *str);
+char *convert(unsigned long int num, int base, int lowercase);
+int print_hex(va_list l);
+int print_hex_big(va_list l);
+int print_octal(va_list l);
+int print_unsigned(va_list l);
+int print_rot13(va_list l);
+int print_rev(va_list l);
+int print_bigS(va_list l);
+int print_address(va_list l);
 
 #endif
